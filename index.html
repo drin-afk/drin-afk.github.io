@@ -1,11 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aldrin Joseph Dinglasan — Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<!-- ══════════════════════════════
+     SIDEBAR
+══════════════════════════════ -->
+<aside class="sidebar">
+
+  <!-- Profile -->
+  <div class="sidebar-profile">
+    <div class="sidebar-avatar">AR</div>
+    <div class="sidebar-profile-text">
+      <div class="sidebar-name">Aldrin Joseph Dinglasan</div>
+      <div class="sidebar-role">Web Developer</div>
+    </div>
+  </div>
+
+  <div class="sidebar-divider"></div>
+
+  <!-- Nav -->
+  <ul class="sidebar-nav">
+    <li>
+      <a href="#home" class="active">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M2 7l7-5 7 5v9H11v-4H7v4H2V7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="nav-label">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="#projects">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <rect x="2" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="10" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="2" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="10" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </span>
+        <span class="nav-label">Projects</span>
+      </a>
+    </li>
+    <li>
+      <a href="#services">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 2v2M9 14v2M2 9h2M14 9h2M4.22 4.22l1.41 1.41M12.37 12.37l1.41 1.41M4.22 13.78l1.41-1.41M12.37 5.63l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nav-label">Services</span>
+      </a>
+    </li>
+    <li>
+      <a href="#about">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M3 16c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nav-label">About Me</span>
+      </a>
+    </li>
+    <li>
+      <a href="#blog">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M3 3h12v12H3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M6 7h6M6 10h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nav-label">Blog</span>
+      </a>
+    </li>
+    <li>
+      <a href="#contact">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M3 4h12v10H3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M3 4l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="nav-label">Contact</span>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Bottom actions -->
+  <div class="sidebar-bottom">
+    <div class="available-badge">
+      <div class="available-dot"></div>
+      <span class="available-text">Available Now</span>
+    </div>
+    <a href="#contact" class="hire-btn">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M7 1v6M4 4l3-3 3 3M2 9v3h10V9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Hire Me</span>
+    </a>
+  </div>
+
+</aside>
+
+
+<!-- ══════════════════════════════
+     MAIN CONTENT
+══════════════════════════════ -->
+<main class="main" id="home">
+
+  <!-- ── HERO ── -->
+  <section class="hero-card fade-in">
+    <div class="hero-left">
+      <div class="hero-status">
+        <div class="hero-status-dot"></div>
+        <span class="hero-status-text">Available for New Projects</span>
+      </div>
+      <h1 class="hero-title">Hey, I'm<br>Aldrin Joseph Dinglasan</h1>
+      <p class="hero-subtitle">Full-Stack Web Developer</p>
+      <p class="hero-desc">I'm a Computer Science student at Cavite State University, building purposeful web experiences from the ground up — clean code, thoughtful UI, and real-world impact.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn-white">About Me</a>
+        <a href="#projects" class="btn-outline">Explore Work →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stat-cards">
+        <div class="hero-stat-card">
+          <div class="hero-stat-num" id="c1">0</div>
+          <div class="hero-stat-label">YEARS EXPERIENCE</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num" id="c2">0</div>
+          <div class="hero-stat-label">PROJECTS SHIPPED</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num" id="c3">0</div>
+          <div class="hero-stat-label">HAPPY CLIENTS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee-strip fade-in fade-in-1">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>React</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Node.js</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>TypeScript</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Next.js</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Java</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>PostgreSQL</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Tailwind CSS</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>MySQL</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Git</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Figma</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Vue.js</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>PHP</span><div class="marquee-dot"></div></div>
+      <!-- Duplicates for seamless loop -->
+      <div class="marquee-item"><span>React</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Node.js</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>TypeScript</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Next.js</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Java</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>PostgreSQL</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Tailwind CSS</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>MySQL</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Git</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Figma</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Vue.js</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>PHP</span><div class="marquee-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- ── STATS ── -->
+  <div class="card stats-card fade-in fade-in-2">
+    <div class="stat-item">
+      <div class="stat-num"><span id="s1">3</span>+</div>
+      <div class="stat-label">Years of Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span id="s2">28</span></div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span id="s3">12</span>+</div>
+      <div class="stat-label">Satisfied Clients</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span id="s4">100</span>%</div>
+      <div class="stat-label">On-Time Delivery</div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT + PROJECTS ── -->
+  <div class="grid-1-2 fade-in fade-in-2" id="projects">
+
+    <!-- About / Skills -->
+    <div class="card about-card" id="about">
+      <div class="avatar-large">AR</div>
+      <div class="about-name">Aldrin Joseph Dinglasan</div>
+      <div class="about-role-line">Web Developer · Cavite, Philippines 🇵🇭</div>
+      <p class="about-bio">CS student at Cavite State University — Naic, building full-stack apps with Java, React, and everything in between. I chase interfaces that feel effortless and code that doesn't apologize for itself.</p>
+
+      <div class="skills-section-title">Frontend</div>
+      <div class="skills-cloud">
+        <span class="skill-chip">HTML/CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Next.js</span>
+        <span class="skill-chip">Vue.js</span>
+        <span class="skill-chip">Tailwind</span>
+        <span class="skill-chip">SVG</span>
+      </div>
+
+      <div class="skills-section-title">Backend &amp; Data</div>
+      <div class="skills-cloud">
+        <span class="skill-chip">Node.js</span>
+        <span class="skill-chip">Java</span>
+        <span class="skill-chip">JSP/Servlet</span>
+        <span class="skill-chip">PHP</span>
+        <span class="skill-chip">MySQL</span>
+        <span class="skill-chip">PostgreSQL</span>
+        <span class="skill-chip">Firebase</span>
+      </div>
+    </div>
+
+    <!-- Projects list -->
+    <div class="card projects-card">
+      <div class="section-label">
+        <div>
+          <div class="section-title-sm">Latest Projects</div>
+          <div class="section-sub">From concept to reality.</div>
+        </div>
+        <a href="#" class="view-all">View all →</a>
+      </div>
+
+      <!-- Featured -->
+      <div class="featured-project">
+        <div class="fp-bg" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);">⚡</div>
+        <div class="fp-overlay">
+          <div class="fp-info">
+            <div class="fp-name">CodeForge Platform</div>
+            <div class="fp-tags">
+              <span class="fp-tag">Java</span>
+              <span class="fp-tag">JSP/Servlet</span>
+              <span class="fp-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project items -->
+      <div class="project-item">
+        <div class="project-thumb" style="background:#fff0e6;">🛍️</div>
+        <div class="project-info">
+          <div class="project-name">Kalikasan Shop</div>
+          <div class="project-desc-sm">Local artisan e-commerce platform connecting Cavite sellers nationwide.</div>
+          <div class="project-tags-row">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Stripe</span>
+          </div>
+        </div>
+        <div class="project-year">2024</div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-thumb" style="background:#e6f0ff;">📊</div>
+        <div class="project-info">
+          <div class="project-name">Pulse Admin Dashboard</div>
+          <div class="project-desc-sm">Real-time analytics dashboard with live data visualization.</div>
+          <div class="project-tags-row">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Chart.js</span>
+          </div>
+        </div>
+        <div class="project-year">2024</div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-thumb" style="background:#e6f9f0;">🦜</div>
+        <div class="project-info">
+          <div class="project-name">FieldLog — Nature App</div>
+          <div class="project-desc-sm">Geotagged citizen science logging app for bird watchers.</div>
+          <div class="project-tags-row">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Maps API</span>
+          </div>
+        </div>
+        <div class="project-year">2025</div>
+      </div>
+    </div>
+
+  </div><!-- end grid -->
+
+  <!-- ── SERVICES + TESTIMONIALS ── -->
+  <div class="grid-2 fade-in fade-in-3" id="services">
+
+    <!-- Services -->
+    <div class="card services-card">
+      <div class="section-label">
+        <div>
+          <div class="section-title-sm">Services I Provide</div>
+          <div class="section-sub">Pushing the limits of what I can build.</div>
+        </div>
+      </div>
+      <div class="service-grid">
+        <div class="service-item">
+          <div class="service-icon" style="background:#e6f0ff;">🖥️</div>
+          <div class="service-name">Frontend Dev</div>
+          <div class="service-desc">Crafting responsive, accessible, and visually stunning user interfaces.</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" style="background:#f0e6ff;">⚙️</div>
+          <div class="service-name">Backend Dev</div>
+          <div class="service-desc">Robust APIs, databases, and server-side logic that scale.</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" style="background:#e6fff0;">📱</div>
+          <div class="service-name">Web Apps</div>
+          <div class="service-desc">End-to-end full-stack applications from ideation to deployment.</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" style="background:#fff0e6;">🎨</div>
+          <div class="service-name">UI Design</div>
+          <div class="service-desc">Figma prototypes and design systems that developers love.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="card testimonials-card">
+      <div class="section-label">
+        <div class="section-title-sm">What People Say</div>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-slides">
+
+          <div class="testimonial-slide active">
+            <div class="testimonial-logo">TechCorp ✦</div>
+            <p class="testimonial-text">"Aldrin demonstrated a deep understanding of our business objectives. His ability to transform complex requirements into an intuitive, user-friendly experience is truly remarkable."</p>
+            <div class="testimonial-person">
+              <div class="testimonial-avatar">EH</div>
+              <div>
+                <div class="testimonial-name">Emma Harriston</div>
+                <div class="testimonial-title">Product Manager, TechCorp</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-logo">StartupPH ✦</div>
+            <p class="testimonial-text">"Working with Aldrin has been a transformative experience. He approached our complex project with clarity and delivered beyond what we imagined was possible."</p>
+            <div class="testimonial-person">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">LM</div>
+              <div>
+                <div class="testimonial-name">Luka Mengham</div>
+                <div class="testimonial-title">CEO, StartupPH</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-logo">NaicDigital ✦</div>
+            <p class="testimonial-text">"Aldrin built our entire platform from scratch in record time. Clean code, great communication, and a sharp eye for design. We'll absolutely work together again."</p>
+            <div class="testimonial-person">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#fa709a,#fee140);">RG</div>
+              <div>
+                <div class="testimonial-name">Rica Gonzales</div>
+                <div class="testimonial-title">Founder, NaicDigital</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end slides -->
+        <div class="testimonial-controls">
+          <button class="t-btn" id="tPrev" aria-label="Previous">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M9 11L5 7l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="t-btn" id="tNext" aria-label="Next">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <span id="tCount" style="font-size:11px;color:var(--text-3);margin-left:4px;align-self:center;">1 / 3</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end grid -->
+
+  <!-- ── BLOG ── -->
+  <div class="card blog-card fade-in fade-in-4" id="blog">
+    <div class="section-label">
+      <div>
+        <div class="section-title-sm">Recent Blogs</div>
+        <div class="section-sub">Design trends, lessons, and behind-the-scenes insights.</div>
+      </div>
+      <a href="#" class="view-all">View all →</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-item">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#667eea,#764ba2);">✍️</div>
+        <div class="blog-body">
+          <div class="blog-cat">UI/UX Design</div>
+          <div class="blog-title">From Feedback to Perfection: Iteration in Design</div>
+          <div class="blog-desc-sm">Explore why iteration is the secret engine behind every polished product.</div>
+        </div>
+      </div>
+      <div class="blog-item">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#f093fb,#f5576c);">♿</div>
+        <div class="blog-body">
+          <div class="blog-cat">Accessibility</div>
+          <div class="blog-title">Designing for Accessibility: More Than a Trend</div>
+          <div class="blog-desc-sm">Why inclusive design isn't optional — and how to get it right from day one.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <div class="cta-card fade-in fade-in-4">
+    <div>
+      <div class="cta-eyebrow">Have a project idea in mind?</div>
+      <h2 class="cta-title">Let's Discuss the<br>Project Details</h2>
+    </div>
+    <div class="cta-right">
+      <a href="#contact" class="btn-white">Book a Meeting →</a>
+    </div>
+  </div>
+
+  <!-- ── CONTACT + SOCIAL ── -->
+  <div class="grid-2 fade-in fade-in-5" id="contact">
+
+    <!-- Contact form -->
+    <div class="card contact-card">
+      <div class="section-label">
+        <div class="section-title-sm">Get in Touch</div>
+      </div>
+      <div class="contact-form">
+        <div class="contact-row">
+          <input class="contact-input" type="text" placeholder="Your name">
+          <input class="contact-input" type="email" placeholder="your@email.com">
+        </div>
+        <input class="contact-input" type="text" placeholder="Subject">
+        <textarea class="contact-input" rows="4" placeholder="Tell me about your project..."></textarea>
+        <button class="btn-dark" id="sendBtn">Send Message →</button>
+      </div>
+    </div>
+
+    <!-- Social + Stack -->
+    <div style="display:flex;flex-direction:column;gap:20px;">
+
+      <div class="card social-card">
+        <div class="section-title-sm">Let's Talk</div>
+        <div style="font-size:13px;color:var(--text-2);margin-top:4px;">aldrin.joseph.dinglasan.dev@gmail.com</div>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M8 2C4.686 2 2 4.686 2 8c0 2.654 1.721 4.908 4.104 5.701.3.055.41-.13.41-.29 0-.143-.005-.522-.008-1.025-1.67.363-2.022-.804-2.022-.804-.273-.694-.666-.879-.666-.879-.544-.372.041-.364.041-.364.602.042.918.618.918.618.535.916 1.403.651 1.744.498.054-.387.209-.652.38-.801-1.333-.152-2.733-.666-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.152-.268-.762.058-1.588 0 0 .504-.161 1.65.615A5.74 5.74 0 018 5.52a5.74 5.74 0 011.5.202c1.146-.776 1.649-.615 1.649-.615.327.826.121 1.436.06 1.588.385.42.617.955.617 1.61 0 2.305-1.403 2.812-2.74 2.96.215.185.407.551.407 1.11 0 .801-.007 1.448-.007 1.645 0 .161.108.348.413.289C12.28 12.906 14 10.653 14 8c0-3.314-2.686-6-6-6z" fill="currentColor"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="#" class="social-link">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M13.5 2h-11C1.672 2 1 2.672 1 3.5v9c0 .828.672 1.5 1.5 1.5h11c.828 0 1.5-.672 1.5-1.5v-9c0-.828-.672-1.5-1.5-1.5zm-8 10H3.5V6H5.5v6zm-1-6.8a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zM12.5 12h-2V9c0-.8-.5-1.2-1-1.2s-1 .5-1 1.2v3h-2V6h2v.8c.4-.6 1-1 1.8-1 1.3 0 2.2.9 2.2 2.5V12z" fill="currentColor"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="#" class="social-link">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.3"/>
+              <circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.3"/>
+              <circle cx="11.5" cy="4.5" r="0.6" fill="currentColor"/>
+            </svg>
+            Instagram
+          </a>
+          <a href="#" class="social-link">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M2 4l5.5 4L2 12h12V4H2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            </svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <div class="card" style="padding:24px;">
+        <div class="section-title-sm" style="margin-bottom:14px;">Stack Highlights</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-2);">Frontend</span>
+            <div style="display:flex;gap:5px;"><span class="tag">React</span><span class="tag">Next.js</span></div>
+          </div>
+          <div style="height:1px;background:var(--border);"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-2);">Backend</span>
+            <div style="display:flex;gap:5px;"><span class="tag">Java</span><span class="tag">Node.js</span></div>
+          </div>
+          <div style="height:1px;background:var(--border);"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-2);">Database</span>
+            <div style="display:flex;gap:5px;"><span class="tag">MySQL</span><span class="tag">Firebase</span></div>
+          </div>
+          <div style="height:1px;background:var(--border);"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-2);">Tools</span>
+            <div style="display:flex;gap:5px;"><span class="tag">Git</span><span class="tag">Figma</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- end grid -->
+
+  <!-- ── FOOTER ── -->
+  <div class="footer-card fade-in fade-in-5">
+    <div>
+      <div class="footer-brand">Aldrin Joseph Dinglasan <span>Web Developer · Cavite, PH 🇵🇭</span></div>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-right">© 2025 Aldrin Joseph Dinglasan · All rights reserved</div>
+  </div>
+
+</main>
+
+<!-- Script -->
+<script src="script.js"></script>
 </body>
 </html>

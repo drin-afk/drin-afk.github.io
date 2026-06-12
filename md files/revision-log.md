@@ -25,7 +25,8 @@ Rules:
 - `b6572d6` `social media links` - updated `index.html`.
 - `0c4900b` `css and js file path` - updated `index.html` to point at the moved asset files.
 - `3bdc378` `.` - updated `index.html`.
+- `1a41871` `revision.md` - updated `md files/revision-log.md`.
 
 ## Working Copy
 
-- `2026-06-12` - reorganized the portfolio files into `assets/css/` and `assets/js/`, updated `index.html` paths, and added a project structure note to `README.md`.
+- `2026-06-12` - made the portfolio responsive for mobile, tablet, and desktop by updating `assets/css/style.css` and `index.html`.

@@ -1,5 +1,5 @@
 /* ============================================
-   PORTFOLIO — script.js
+   PORTFOLIO — assets/js/script.js
    Alex Reyes · Web Developer
    ============================================ */
 
